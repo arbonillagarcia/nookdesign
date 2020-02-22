@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="fabric.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="750" height="605" style="border:1px solid #000000" ></canvas>
+
+    <script>
+  
+        var canvas = new fabric.Canvas('canvas');
+        
+        var imageUrl = "./images/template.png";
+        canvas.setBackgroundImage(imageUrl, canvas.renderAll.bind(canvas), {
+            backgroundImageOpacity: 0.5,
+            backgroundImageStretch: false
+        });
+        
+        fabric.Image.fromURL('./images/trees.png', function(myImg) {
+            canvas.add(myImg); 
+        });
+                fabric.Image.fromURL('./images/trees.png', function(myImg) {
+            canvas.add(myImg); 
+        });
+                fabric.Image.fromURL('./images/trees.png', function(myImg) {
+            canvas.add(myImg); 
+        });
+                fabric.Image.fromURL('./images/trees.png', function(myImg) {
+            canvas.add(myImg); 
+        });
+        
+        
+        
+    </script>
+</body>
+</html>
